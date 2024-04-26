@@ -32,6 +32,8 @@ def track_hand(frame):
             for id, landmark in enumerate(landmarks):
                 x = int(landmark.x * frame_width)
                 y = int(landmark.y * frame_height)
+                
+                #Actions
                 if id == 8: #Refer to landmarks.txt 
                     cv2.circle(img=frame, center=(x, y), radius=10, color=(0, 0, 255))
                     index_x = screen_width / frame_width * x
@@ -66,8 +68,6 @@ def track_hand(frame):
                     ring_end_y = screen_height / frame_height * y
                     if abs(thumb_x - ring_end_x) < 50:
                         pyautogui.press('volumedown')
-
-
 
 
 def render_frame():
