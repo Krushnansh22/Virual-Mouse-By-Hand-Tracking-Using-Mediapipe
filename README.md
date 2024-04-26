@@ -4,7 +4,7 @@ This Python program utilizes MediaPipe and PyAutoGUI to create a hand gesture-co
 
 ### Requirements:
 
-1. **Python:** Ensure you have Python installed on your system. You can download it from [python.org](https://www.python.org/).[Version 3.10 recommended]
+1. **Python:** Ensure you have Python installed on your system. You can download it from [python.org](https://www.python.org/) [Version 3.8 recommended]
 
 2. **OpenCV:** Install the OpenCV library for Python. You can install it using pip:
    ```
